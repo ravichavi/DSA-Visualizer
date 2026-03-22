@@ -65,6 +65,9 @@ app.js
 * Add Trees & Graphs visualization
 * Speed control for animations
 
+## 🌐 Live Demo
+👉 https://ravichavi.github.io/DSA-Visualizer/
+
 ## 🙌 Acknowledgment
 
 Built as a learning project to strengthen **DSA + Frontend development skills**.
