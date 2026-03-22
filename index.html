@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>DSA Visualizer</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="app">
+
+  <!-- Sidebar -->
+  <div class="sidebar">
+    <h2>⚡ DSA</h2>
+    <button class="nav-btn active" onclick="showSection('stack', this)">Stack</button>
+    <button class="nav-btn" onclick="showSection('linkedlist', this)">Linked List</button>
+  </div>
+
+  <!-- Main -->
+  <div class="main">
+
+    <div class="panel">
+      <h2 id="title">Stack</h2>
+
+      <input id="value" placeholder="Enter value" autocomplete="off">
+      <input id="position" type="number" placeholder="Position" autocomplete="off" class="hidden">
+
+      <div id="stack-controls">
+        <button class="action-btn" onclick="push(event)">Push</button>
+        <button class="action-btn" onclick="pop(event)">Pop</button>
+      </div>
+
+      <div id="ll-controls" style="display:none;">
+        <button class="action-btn" onclick="insert(event)">Insert</button>
+        <button class="action-btn" onclick="deleteNode(event)">Delete</button>
+        <button class="action-btn" onclick="traverse(event)">Traverse</button>
+      </div>
+    </div>
+
+    <div id="visualizer" class="panel"></div>
+
+    <div class="panel">
+      <p id="explain"></p>
+    </div>
+
+  </div>
+
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
